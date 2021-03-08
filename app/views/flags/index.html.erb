@@ -1,0 +1,6 @@
+<% @flags.each do |flag| %>
+  <div>
+    <%= link_to "#{flag.id} - #{flag.title}", flag_path(flag) %>
+    <%= ': 有photo' if flag.photo.attached? %>
+  </div>
+<% end %>

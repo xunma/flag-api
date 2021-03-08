@@ -1,4 +1,8 @@
 class FlagsController < ApplicationController
+  def index
+    @flags = Flag.all
+  end
+
   def new
     @flag = Flag.new
   end
