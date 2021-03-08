@@ -1,0 +1,7 @@
+<%= @flag.title %>
+<% if @flag.photo.attached?%>
+  <%= image_tag @flag.photo  %>
+<% else %>
+  <h1>No attachment.</h1>
+<% end %>
+
